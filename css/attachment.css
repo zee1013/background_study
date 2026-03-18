@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+ul, li{
+    list-style: none;
+}
+.area{
+    width: 100%;
+    height: 1000px;
+    background-color: #333;
+}
+#area1{
+    background: url(../images/attachment/bg1.jpg) no-repeat center;
+    background-size: cover;
+}
+#area2{
+    background: url(../images/attachment/bg2.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+#area3{
+    background: url(../images/attachment/bg3.jpg) no-repeat center;
+    background-size: cover;
+}
+#area4{
+    background: url(../images/attachment/bg4.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#area5{
+    background: url(../images/attachment/bg5.jpg) no-repeat center;
+    background-size: cover;
+}
