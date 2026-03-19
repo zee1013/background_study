@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그라데이션</title>
+    <style>
+        div{
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+        }
+        .grad{
+            background-color: aquamarine;
+            /* background: linear-gradient(to <방향> 또는 <각도> , <색상중지점> , [색상중지점]); */
+            background: linear-gradient(to right bottom , blue , white);
+        }
+        .grad1{
+            background-color: antiquewhite;
+            background: linear-gradient(45deg , pink , ivory 50% , lightgreen);
+        }
+        .grad2{
+            background-color: aliceblue;
+            background: radial-gradient(circle , white , yellow , orange);
+        }
+        .grad3{
+            background-color: beige;
+            background: radial-gradient(white 10%, yellow 50%, orange 80%);
+        }
+        .grad4{
+            background-color: darkcyan;
+            /* closest-side 그라데이션 중심에서 가까운 측면에 닿을 때까지 */
+            /* background: radial-gradient(circle closest-side at 30% 60% , white , lightgreen , lightpink); */
+            /* background: radial-gradient(circle closest-corner at 30% 70% , white , lightgreen , lightpink); */
+            background: radial-gradient(circle farthest-side at 30% 70% , white , lightgreen , lightpink);
+            background: radial-gradient(circle farthest-corner at 30% 50% , white , lightgreen , lightpink);
+        }
+        .grad5{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: pink;
+            background: radial-gradient(circle at 20% 20% , white , lightpink , pink );
+            box-shadow: 10px 5px 10px #ccc;
+        }
+        .grad6{
+            /* background-color: red; */
+            /* background: repeating-linear-gradient(green , skyblue 20px); */
+            /* background: repeating-radial-gradient(circle , green , skyblue 20px); */
+            /* background: repeating-linear-gradient(green , green 20px, skyblue 20px , skyblue 40px); */
+            background: repeating-radial-gradient(circle , green , green 20px, skyblue 20px , skyblue 40px);
+        }
+    </style>
+</head>
+<body>
+    <div class="grad"></div>
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+    <div class="grad3"></div>
+    <div class="grad4"></div>
+    <div class="grad5"></div>
+    <div class="grad6"></div>
+</body>
+</html>
