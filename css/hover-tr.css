@@ -60,6 +60,10 @@
     margin: 0 auto;
     border-radius: 20px;
     overflow: hidden;
+    transition: all 1s;
+}
+.img-box1:hover{
+    border-radius: 50%;
 }
 .img-box1 img{
     width: 100%;
